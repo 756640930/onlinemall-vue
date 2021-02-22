@@ -1,10 +1,27 @@
 <template>
   <div id="app">
+    <router-view></router-view>
     <tab-bar>
-      <tab-bar-item></tab-bar-item>
-      <tab-bar-item></tab-bar-item>
-      <tab-bar-item></tab-bar-item>
-      <tab-bar-item></tab-bar-item>
+      <tab-bar-item path="/home" activeColor="red">
+        <img slot="item-icon" src="@/assets/img/img/home.svg" alt="" />
+        <img slot="item-icon-active" src="@/assets/img/img/home_active.svg" alt="" />
+        <div slot="item-text">首页</div>
+      </tab-bar-item>
+      <tab-bar-item path="/category" activeColor="red">
+        <img slot="item-icon" src="@/assets/img/img/category.svg" alt="" />
+        <img slot="item-icon-active" src="@/assets/img/img/category_active.svg" alt="" />
+        <div slot="item-text">分类</div>
+      </tab-bar-item>
+      <tab-bar-item path="/cart" activeColor="red">
+        <img slot="item-icon" src="@/assets/img/img/cart.svg" alt="" />
+        <img slot="item-icon-active" src="@/assets/img/img/cart_active.svg" alt="" />
+        <div slot="item-text">购物车</div>
+      </tab-bar-item>
+      <tab-bar-item path="/profile" activeColor="red">
+        <img slot="item-icon" src="@/assets/img/img/profile.svg" alt="" />
+        <img slot="item-icon-active" src="@/assets/img/img/profile_active.svg" alt="" />
+        <div slot="item-text">我的</div>
+      </tab-bar-item>
     </tab-bar>
   </div>
 </template>
@@ -25,5 +42,6 @@ export default {
 </script>
 
 <style>
-    
+  /* 在style里引用import要加@ */
+  @import "./assets/css/base.css"
 </style>
