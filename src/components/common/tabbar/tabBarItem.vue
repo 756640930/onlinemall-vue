@@ -37,8 +37,8 @@
       itemClick() {
         this.$router.replace(this.path)
         // 注意这里面的this.$router和this.$route不一样,This.$route指的是路由配置文件index中的路由数组routes的元素
-        console.log(this.$route.path)
-        console.log(this.$router)
+        // console.log(this.$route.path)
+        // console.log(this.$router)
       }
     }
 	}
